@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/jolimont/static/css/2.ccedd8d1.chunk.css"
   },
   {
-    "revision": "4dffa97a433c5f3684cdc2a8f38046dd",
+    "revision": "aab4b88fc176cf4aaf9741f3a49bcff9",
     "url": "/jolimont/index.html"
   }
 ];
