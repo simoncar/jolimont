@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/jolimont/static/js/runtime~main.6af8d2a9.js"
   },
   {
-    "revision": "31b34353dae4aa951742",
-    "url": "/jolimont/static/js/main.31b34353.chunk.js"
+    "revision": "24d6a63d586a64060259",
+    "url": "/jolimont/static/js/main.24d6a63d.chunk.js"
   },
   {
     "revision": "826777a9fa731c1a219a",
     "url": "/jolimont/static/js/2.826777a9.chunk.js"
   },
   {
-    "revision": "31b34353dae4aa951742",
+    "revision": "24d6a63d586a64060259",
     "url": "/jolimont/static/css/main.32994709.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/jolimont/static/css/2.ccedd8d1.chunk.css"
   },
   {
-    "revision": "519e0f83d01acf569312c8d23f511578",
+    "revision": "691fb884e47f56b505702729155d85f0",
     "url": "/jolimont/index.html"
   }
 ];
