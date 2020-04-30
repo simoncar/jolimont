@@ -34,7 +34,7 @@ class ApartmentsPlansSection extends Component {
     render() {
         return (
             <div className="container">
-                <Heading>APARTMENTS PLANS</Heading>
+                <Heading>JOLIMONT PLANS</Heading>
                 <div className={`tabs-wrap`}>
                     {!this.state.isLoading && (
                         <Tabs>
