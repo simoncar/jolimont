@@ -1,0 +1,127 @@
+[
+    {
+        "title": "Level 1 - Ground",
+        "description": "This outstanding New York inspired freestanding residence designed by renowned, award winning architect Matt Gibson exudes meticulous attention to detail, both colossal in its exterior design and sculptural in its landscape. This landmark home sits on the doorstep of the CBD, Melbourne’s famous Sporting Precinct and within walking distance to Fitzroy and Treasury Gardens.",
+        "attributes": [
+            {
+                "name": "Car Parking",
+                "option": "3 (2 Secure Stacker, 1 Driveway)"
+            },
+            {
+                "name": "ENTRY",
+                "option": "Secure Pin"
+            },
+            {
+                "name": "Bedroom 1",
+                "option": "KING or 2 SINGLES"
+            },
+            {
+                "name": "LIFT ",
+                "option": "Yes"
+            }
+        ],
+        "image": "/assets/imagewebp/apartment/L1png.webp"
+    },
+    {
+        "title": "Level 2",
+        "description": "All bedrooms showcase a plethora of floor to ceiling streamlined built-in robes with LED featured lighting and charcoal plush wool carpets. Further enhanced by two ensuites and a central bathroom, the main a seductive luxury and all offering under floor heating.",
+        "attributes": [
+            {
+                "name": "Bedroom 2",
+                "option": "KING or 2 SINGLES"
+            },
+            {
+                "name": "Bedroom 3 - Master",
+                "option": "KING"
+            },
+            {
+                "name": "Master",
+                "option": "En suite "
+            },
+            {
+                "name": "Laundry",
+                "option": "WASHER AND DRYER "
+            },
+            {
+                "name": "LIFT ",
+                "option": "Yes"
+            }
+        ],
+        "image": "/assets/imagewebp/apartment/L2png.webp",
+        "position": "left"
+    },
+    {
+        "title": "LEVEL 3",
+        "description": "The perfect entertainer’s kitchen incorporates matte-finished Carrera marble with a Gaggenau oven, induction cooktop, rangehood and dishwasher, while an integrated fridge and freezer are concealed behind a snow-white façade amongst generous storage.",
+        "attributes": [
+            {
+                "name": "KITCHEN",
+                "option": "99"
+            },
+            {
+                "name": "LIVING",
+                "option": "TV"
+            },
+            {
+                "name": "DINING",
+                "option": "8 seat table"
+            },
+            {
+                "name": "DECK",
+                "option": "Yes"
+            },
+            {
+                "name": "LIFT ",
+                "option": "Yes"
+            }
+        ],
+        "image": "/assets/imagewebp/apartment/L3png.webp"
+    },
+    {
+        "title": "LEVEL 4",
+        "description": "Floor to ceiling steel-framed glass industrial doors extend to a deck with built-in BBQ complete with views",
+        "attributes": [
+            {
+                "name": "STUDY",
+                "option": "DESK"
+            },
+            {
+                "name": "BEDDING",
+                "option": "DAY BED"
+            },
+            {
+                "name": "ENTERTAINMENT",
+                "option": "BBQ"
+            },
+            {
+                "name": "DECK",
+                "option": "Seating 6"
+            },
+            {
+                "name": "LIFT ",
+                "option": "Yes"
+            }
+        ],
+        "image": "/assets/imagewebp/apartment/L4png.webp",
+        "position": "left"
+    },
+    {
+        "title": "LEVEL 5 - ENTERTAINMENT",
+        "description": "The finale is an expansive entertainers roof deck offering 180-degree city and park views from all levels offering ultimate skyline living.",
+        "attributes": [
+            {
+                "name": "ENTERTAINMENT",
+                "option": ""
+            },
+            {
+                "name": "UMBRELLA",
+                "option": ""
+            },
+            {
+                "name": "PRIVACY",
+                "option": ""
+            }
+        ],
+        "image": "/assets/imagewebp/apartment/L5png.webp"
+    }
+]
