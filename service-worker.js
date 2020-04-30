@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/jolimont/precache-manifest.e137af1daa3eb63d23b0fdfbcddc841d.js"
+  "/jolimont/precache-manifest.0d1b9418ab07e72a101da37ae15ba4bc.js"
 );
 
 workbox.clientsClaim();
