@@ -1,0 +1,45 @@
+{
+    "image": "/assets/imagewebp/theme/img-apartment.webp",
+    "data" : [
+        {
+            "title": "Restaurants",
+            "desc": "Metropolitan Opera House Lincoln Center Theater New York Philharmonic New York City Ballet The Julliard School",
+            "position": {
+                "left": "50%",
+                "top": "38%"
+            }
+        },
+        {
+            "title": "Center Park",
+            "desc": "Metropolitan Opera House Lincoln Center Theater New York Philharmonic New York City Ballet The Julliard School",
+            "position": {
+                "left": "34%",
+                "top": "42%"
+            }
+        },
+        {
+            "title": "Shopping Center",
+            "desc": "Metropolitan Opera House Lincoln Center Theater New York Philharmonic New York City Ballet The Julliard School",
+            "position": {
+                "left": "55%",
+                "top": "20%"
+            }
+        },
+        {
+            "title": "Hospital",
+            "desc": "Metropolitan Opera House Lincoln Center Theater New York Philharmonic New York City Ballet The Julliard School",
+            "position": {
+                "left": "60%",
+                "top": "75%"
+            }
+        },
+        {
+            "title": "Shopping Mall",
+            "desc": "Metropolitan Opera House Lincoln Center Theater New York Philharmonic New York City Ballet The Julliard School",
+            "position": {
+                "left": "73%",
+                "top": "20%"
+            }
+        }
+    ]
+}

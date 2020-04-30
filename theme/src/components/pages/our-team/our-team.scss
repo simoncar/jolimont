@@ -1,0 +1,60 @@
+@import "../../../../public/assets/scss/base/variables";
+.featured-box{
+    padding: 0 30px;
+    @media (max-width: 992px){
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+    .featured-box-top{
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        @media (max-width: 992px){
+            margin-bottom: 5px;
+        }
+    }
+    .featured-box-icon{
+        display: flex;
+        align-items: center;
+        min-height: 50px;
+        i{
+            color: $primary;
+            font-size: 40px;
+            line-height: 1;
+            margin-right: 22px;
+        }
+    }
+    .featured-box-title{
+        font-size: 16px;
+        color: $white;
+    }
+    .featured-box-description{
+        color: rgba(255,255,255,0.85);
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    &:hover{
+        .featured-box-icon{
+            i {
+                -webkit-animation-name: move-horizontal;
+                animation-name: move-horizontal;
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+                -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+            }
+        }
+    }
+}
+.background-overlay{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.6;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}

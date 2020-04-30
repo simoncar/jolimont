@@ -1,0 +1,94 @@
+.react-tabs {
+    -webkit-tap-highlight-color: transparent;
+
+    &__tab-list {
+        margin: 0 0 50px;
+        padding: 0;
+    }
+
+    &__tab {
+        display: inline-block;
+        position: relative;
+        list-style: none;
+        cursor: pointer;
+        font-family: $font-family-heading;
+        font-size: 24px;
+        font-weight: 600;
+        color: black;
+        margin: 0 1.65rem 0;
+        position: relative;
+        padding-bottom: 3px;
+        @media (max-width: 768px) {
+            font-size: 20px;
+            margin: 0 0.5rem 0;
+        }
+        @media (max-width: 448px) {
+            font-size: 18px;
+            display: block;
+            margin: 0 0 15px;
+        }
+
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            width: 0;
+            left: 0;
+            height: 3px;
+            background-color: #000;
+            transition: all ease 0.35s;
+            @media (max-width: 448px) {
+                height: 2px;
+            }
+        }
+        &:hover{
+            &:after {
+                width: 100%;
+                transition: all ease 0.35s;
+            }
+        }
+
+        &--selected {
+            color: black;
+            &:after {
+                width: 100%;
+                transition: all ease 0.35s;
+            }
+        }
+
+        &--disabled {
+            color: GrayText;
+            cursor: default;
+        }
+
+        &:focus {
+            box-shadow: 0 0 5px hsl(208, 99%, 50%);
+            border-color: hsl(208, 99%, 50%);
+            outline: none;
+
+            &:after {
+                content: "";
+                position: absolute;
+                height: 5px;
+                left: -4px;
+                right: -4px;
+                bottom: -5px;
+                background: #fff;
+            }
+        }
+    }
+
+    &__tab-panel {
+        display: none;
+
+        &--selected {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "opal-icon";
+    font-display: swap;
+    src: url('/assets/fonts/opal-icon.eot');
+    src: url('/assets/fonts/opal-icon.eot?#iefix') format('eot'),
+    url('/assets/fonts/opal-icon.woff2') format('woff2'),
+    url('/assets/fonts/opal-icon.woff') format('woff'),
+    url('/assets/fonts/opal-icon.ttf') format('truetype'),
+    url('/assets/fonts/opal-icon.svg#opal-icon') format('svg');
+}
+
+[class*="opal-icon-"]:before{
+    font-family: "opal-icon";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.opal-icon {
+    font-family: "opal-icon";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+@function opal-icon-char($filename) {
+    $char: "";
+
+    @if $filename == arrow-left {
+        $char: "\E001";
+    }
+    @if $filename == arrow-right {
+        $char: "\E002";
+    }
+    @if $filename == badge {
+        $char: "\E003";
+    }
+    @if $filename == check {
+        $char: "\E004";
+    }
+    @if $filename == close {
+        $char: "\E005";
+    }
+    @if $filename == coffee {
+        $char: "\E006";
+    }
+    @if $filename == config {
+        $char: "\E007";
+    }
+    @if $filename == decor {
+        $char: "\E008";
+    }
+    @if $filename == envelope {
+        $char: "\E009";
+    }
+    @if $filename == like {
+        $char: "\E00A";
+    }
+    @if $filename == map {
+        $char: "\E00B";
+    }
+    @if $filename == phone {
+        $char: "\E00C";
+    }
+    @if $filename == point {
+        $char: "\E00D";
+    }
+    @if $filename == search {
+        $char: "\E00E";
+    }
+    @if $filename == toggle {
+        $char: "\E00F";
+    }
+    @if $filename == uncheck {
+        $char: "\E010";
+    }
+    @if $filename == user {
+        $char: "\E011";
+    }
+    @if $filename == zoom {
+        $char: "\E012";
+    }
+
+    @return $char;
+}
+
+@mixin opal-icon($filename, $insert: before) {
+    &:#{$insert} {
+        content: opal-icon-char($filename);
+    }
+}
+
+.opal-icon-arrow-left {
+    @include opal-icon(arrow-left);
+}
+.opal-icon-arrow-right {
+    @include opal-icon(arrow-right);
+}
+.opal-icon-badge {
+    @include opal-icon(badge);
+}
+.opal-icon-check {
+    @include opal-icon(check);
+}
+.opal-icon-close {
+    @include opal-icon(close);
+}
+.opal-icon-coffee {
+    @include opal-icon(coffee);
+}
+.opal-icon-config {
+    @include opal-icon(config);
+}
+.opal-icon-decor {
+    @include opal-icon(decor);
+}
+.opal-icon-envelope {
+    @include opal-icon(envelope);
+}
+.opal-icon-like {
+    @include opal-icon(like);
+}
+.opal-icon-map {
+    @include opal-icon(map);
+}
+.opal-icon-phone {
+    @include opal-icon(phone);
+}
+.opal-icon-point {
+    @include opal-icon(point);
+}
+.opal-icon-search {
+    @include opal-icon(search);
+}
+.opal-icon-toggle {
+    @include opal-icon(toggle);
+}
+.opal-icon-uncheck {
+    @include opal-icon(uncheck);
+}
+.opal-icon-user {
+    @include opal-icon(user);
+}
+.opal-icon-zoom {
+    @include opal-icon(zoom);
+}

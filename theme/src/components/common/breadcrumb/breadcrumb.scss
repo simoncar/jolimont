@@ -1,0 +1,39 @@
+@import "../../../../public/assets/scss/base/variables";
+.breadcrumb-section {
+    text-align: center;
+    padding: 60px 0 30px;
+    background: #292929 url("/assets/imagewebp/theme/pattern_dark.webp");
+    position: relative;
+    .page-title {
+        h2 {
+            color: $white;
+            font-family: $font-family-heading;
+            font-size: 24px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 0.01em;
+            font-weight: 700;
+            margin: 1.5em 0 0;
+        }
+    }
+}
+.breadcrumb {
+    -ms-flex-pack: center;
+    justify-content: center;
+    *{
+        font-size: 14px;
+        line-height: 30px;
+        color: $primary;
+        &:hover{
+            color: $white;
+        }
+    }
+    .active {
+        color: $primary;
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+        font-size: 14px;
+        color: $primary;
+        content: ".";
+    }
+}

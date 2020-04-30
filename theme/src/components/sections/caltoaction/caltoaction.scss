@@ -1,0 +1,23 @@
+@import "../../../../public/assets/scss/base/variables";
+.call-to-action{
+    padding: 100px 0;
+    background: url(/assets/imagewebp/about/bg_ab2.webp);
+    position: relative;
+    background-position: center;
+    h1{
+        @media (max-width: 992px) and (min-width: 576px) {
+            font-size: 48px;
+        }
+        @media (max-width: 576px) {
+            font-size: 40px;
+        }
+    }
+    h2{
+        @media (max-width: 992px) and (min-width: 576px) {
+            font-size: 36px;
+        }
+        @media (max-width: 576px) {
+            font-size: 22px;
+        }
+    }
+}

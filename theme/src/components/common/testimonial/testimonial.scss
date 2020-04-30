@@ -1,0 +1,99 @@
+@import "../../../../public/assets/scss/base/variables";
+
+
+.testimonial-inner {
+    width: 58%;
+    margin: 0 auto;
+    padding: 90px 0 190px;
+    @media (max-width: 900px) {
+        width: 90%;
+    }
+    .slick-list{
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 48px;
+        letter-spacing: -0.75px;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Bai Jamjuree", Sans-serif;
+    }
+    .info {
+        .testimonial-name {
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: $typo-headings-font-family;
+            color: $white;
+            margin-top: 25px;
+            span {
+                color: #e33d3d;
+            }
+        }
+    }
+    .testimonial-icon {
+        margin-bottom: 30px;
+        i {
+            color: #e33d3d;
+            font-size: 90px;
+        }
+    }
+
+}
+.testimonial-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    .testimonial-control-prev, .testimonial-control-next{
+        width: 60px;
+        height:60px;
+        display: flex;
+        border-width: 2px;
+        border-color: rgba(255, 255, 255, 0.2);
+        border-style: solid;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        i {
+            font-size: 18px;
+            color: #fff;
+        }
+        &:hover {
+            border-color: #e33d3d;
+            i {
+                color: #e33d3d;
+            }
+        }
+    }
+    .testimonial-img {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+.testimonials-light {
+    background-color: #fff;
+    .testimonial-inner{
+        width: 100%;
+        padding: 90px 50px;
+        .slick-list {
+            color: #000;
+        }
+        .info .testimonial-name {
+            color: #000;
+        }
+    }
+    .testimonial-nav {
+        .testimonial-control-prev,
+        .testimonial-control-next{
+            border-color: rgba(0, 0, 0, 0.2);
+            i {
+                color: #000;
+            }
+            &:hover {
+                border-color: $primary;
+                i {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import "../../../../../public/assets/scss/base/variables";
+.header-language{
+    margin-left: 10px;
+    span{
+        line-height: 30px;
+        cursor: pointer;
+    }
+    img{
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+}
+.language-content{
+    background-color: #fff;
+    width: 150px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.17);
+    font-size: 12px;
+    padding: 0;
+    list-style: none;
+
+    .language_inner{
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        > li{
+            width: 100%;
+            border-width: 0 0 1px 0;
+            border-bottom: 1px solid #dbdbdb;
+            a{
+                color: $black1;
+                padding: 8px 15px;
+                font-size: 12px;
+                display: block;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

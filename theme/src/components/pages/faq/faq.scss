@@ -1,0 +1,84 @@
+@import "../../../../public/assets/scss/base/variables";
+/**
+* ----------------------------------------------
+* Demo styles
+* ----------------------------------------------
+**/
+.faq-wrap{
+    .section-wrapper{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .accordion__button:before{
+        margin-right: 25px;
+    }
+}
+.accordion {
+    border-bottom:1px solid $border-color ;
+    border-top:1px solid $border-color ;
+    .accordion__item:last-child{
+        .accordion__button {
+            border-bottom: 0;
+        }
+        .accordion__panel{
+            border-bottom: 0;
+            border-top: 1px solid $border-color;
+        }
+    }
+}
+
+.accordion__item + .accordion__item {
+}
+
+.accordion__button {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+    letter-spacing: 3px;
+    color: $headings-color;
+    padding: 15px 25px 15px 25px;
+    font-family: $headings-font-family;
+    border-bottom:1px solid $border-color ;
+    cursor: pointer;
+    outline: none;
+    &:hover{
+        color: $primary;
+    }
+}
+
+.accordion__button:before {
+    display: inline-block;
+    content: '+';
+    font-size: 20px;
+    color: $primary;
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+    content: '-';
+}
+
+.accordion__panel {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    border-bottom: 1px solid $border-color;
+    padding: 40px 40px 40px 62px;
+    animation: fadein 0.35s ease-in;
+    transition: all 0.35s ease-in-out;
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

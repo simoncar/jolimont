@@ -1,0 +1,59 @@
+@import "../../../../public/assets/scss/base/variables";
+.blog-style-2 {
+    .content {
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        &:hover{
+            background-color: $dark;
+            transition: all 0.5s ease;
+            ms-transform: translateY(-5px);
+            -o-transform: translateY(-5px);
+            -moz-transform: translateY(-5px);
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+            .entry-meta,
+            .title {
+                a {
+                    color: #fff;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+            .posted-on{
+                color: #fff;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .entry-posted {
+        margin-bottom: 40px;
+    }
+    .posted-on {
+        margin-top: 15px;
+        position: relative;
+        padding-bottom: 5px;
+        color: $headings-color;
+        &:after {
+            content: '';
+            height: 3px;
+            width: 45px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: $primary;
+        }
+    }
+    .title{
+        margin-bottom: 25px;
+    }
+    .entry-meta {
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+}

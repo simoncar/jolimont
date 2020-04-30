@@ -1,0 +1,41 @@
+@import "../../../../public/assets/scss/base/variables";
+
+.form-group-v1 {
+    .form-control {
+        background-color: transparent;
+        border: 2px solid $primary;
+        padding: 0.57rem 1.4rem;
+        margin-top: 0;
+        flex: 1;
+        &::placeholder {
+            color: $body-color;
+        }
+        &:focus {
+            border-color: $primary;
+        }
+    }
+
+    button[type="submit"] {
+        font-size: 12px;
+        transition: all 0.4s;
+    }
+}
+
+.site-footer {
+    .form-group-v1 {
+        .form-control {
+            color: $white;
+        }
+
+        button[type="submit"] {
+            background-color: white;
+            border: 2px solid #fff;
+            color: $primary;
+            &:hover {
+                color: $primary;
+                border-color: $primary;
+                transition: all 0.4s;
+            }
+        }
+    }
+}

@@ -1,0 +1,746 @@
+@mixin font-size($fontSize){
+    font-size: $fontSize + px;
+    font-size: ($fontSize/ 16)+rem;
+}
+
+@mixin opal-table(){
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    td, th {
+        border: 1px solid $border-color;
+        padding: 0.6em;
+    }
+    thead {
+        th {
+            padding-bottom: 0.5em;
+            background-color: #222a35;
+            color: #b8bdc8;
+            border-color: #2e3744;
+        }
+    }
+
+    th {
+        font-weight: 500;
+    }
+
+    tr {
+        border-bottom: 1px solid $border-color;
+    }
+
+    tbody {
+        > tr {
+            color: #7d8794;
+            background-color: #f5f6fa;
+            &:nth-child(2n+1) {
+                background-color: rgba(245, 246, 250, 0.7);
+                background-color: #e8eaed;
+            }
+
+        }
+    }
+}
+
+
+// Transformations
+
+@mixin transition($transition...) {
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    -moz-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transform($value...) {
+    -ms-transform: $value;
+    -o-transform: $value;
+    -moz-transform: $value;
+    -webkit-transform: $value;
+    transform: $value;
+}
+@mixin transform-none() {
+    -ms-transform: none;
+    -o-transform: none;
+    -moz-transform: none;
+    -webkit-transform: none;
+    transform: none;
+}
+@mixin scale($ratio...) {
+    -ms-transform: scale($ratio);
+    -o-transform: scale($ratio);
+    -moz-transform: scale($ratio);
+    -webkit-transform: scale($ratio);
+    transform: scale($ratio);
+}
+
+@mixin scaleX($ratio) {
+    -ms-transform: scaleX($ratio);
+    -o-transform: scaleX($ratio);
+    -moz-transform: scaleX($ratio);
+    -webkit-transform: scaleX($ratio);
+    transform: scaleX($ratio);
+}
+@mixin scaleY($ratio) {
+    -ms-transform: scaleY($ratio);
+    -o-transform: scaleY($ratio);
+    -moz-transform: scaleY($ratio);
+    -webkit-transform: scaleY($ratio);
+    transform: scaleY($ratio);
+}
+@mixin scale3d($x, $y, $z) {
+    -ms-transform: scale3d($x, $y, $z);
+    -o-transform: scale3d($x, $y, $z);
+    -moz-transform: scale3d($x, $y, $z);
+    -webkit-transform: scale3d($x, $y, $z);
+    transform: scale3d($x, $y, $z);
+}
+
+@mixin skew($x, $y) {
+    -ms-transform: skewX($x) skewY($y);
+    -o-transform: skewX($x) skewY($y);
+    -moz-transform: skewX($x) skewY($y);
+    -webkit-transform: skewX($x) skewY($y);
+    transform: skewX($x) skewY($y);
+}
+@mixin translate($x, $y) {
+    -ms-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -webkit-transform: translate($x, $y);
+    transform: translate($x, $y);
+}
+@mixin translateX($x) {
+    -ms-transform: translateX($x);
+    -o-transform: translateX($x);
+    -moz-transform: translateX($x);
+    -webkit-transform: translateX($x);
+    transform: translateX($x);
+}
+@mixin translateY($y) {
+    -ms-transform: translateY($y);
+    -o-transform: translateY($y);
+    -moz-transform: translateY($y);
+    -webkit-transform: translateY($y);
+    transform: translateY($y);
+}
+@mixin translate3d($x, $y, $z) {
+    -ms-transform: translate3d($x, $y, $z);
+    -o-transform: translate3d($x, $y, $z);
+    -moz-transform: translate3d($x, $y, $z);
+    -webkit-transform: translate3d($x, $y, $z);
+    transform: translate3d($x, $y, $z);
+}
+@mixin translate-0() {
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+@mixin rotate($degrees) {
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -webkit-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
+@mixin rotateX($degrees) {
+    -ms-transform: rotateX($degrees);
+    -o-transform: rotateX($degrees);
+    -moz-transform: rotateX($degrees);
+    -webkit-transform: rotateX($degrees);
+    transform: rotateX($degrees);
+}
+@mixin rotateY($degrees) {
+    -ms-transform: rotateY($degrees);
+    -o-transform: rotateY($degrees);
+    -moz-transform: rotateY($degrees);
+    -webkit-transform: rotateY($degrees);
+    transform: rotateY($degrees);
+}
+@mixin perspective($perspective) {
+    -ms-perspective: $perspective;
+    -o-perspective: $perspective;
+    -moz-perspective: $perspective;
+    -webkit-perspective: $perspective;
+    perspective: $perspective;
+}
+@mixin perspective-origin($perspective) {
+    -ms-perspective-origin: $perspective;
+    -o-perspective-origin: $perspective;
+    -moz-perspective-origin: $perspective;
+    -webkit-perspective-origin: $perspective;
+    perspective-origin: $perspective;
+}
+@mixin transform-origin($origin) {
+    -ms-transform-origin: $origin;
+    -o-transform-origin: $origin;
+    -moz-transform-origin: $origin;
+    -webkit-transform-origin: $origin;
+    transform-origin: $origin;
+}
+
+// Animations
+@mixin animation($animation...) {
+    -ms-animation: $animation;
+    -o-animation: $animation;
+    -moz-animation: $animation;
+    -webkit-animation: $animation;
+    animation: $animation;
+}
+@mixin animation-name($name) {
+    -ms-animation-name: $name;
+    -o-animation-name: $name;
+    -moz-animation-name: $name;
+    -webkit-animation-name: $name;
+    animation-name: $name;
+}
+@mixin animation-duration($duration) {
+    -ms-animation-duration: $duration;
+    -o-animation-duration: $duration;
+    -moz-animation-duration: $duration;
+    -webkit-animation-duration: $duration;
+    animation-duration: $duration;
+}
+@mixin animation-timing-function($timing-function) {
+    -ms-animation-timing-function: $timing-function;
+    -o-animation-timing-function: $timing-function;
+    -moz-animation-timing-function: $timing-function;
+    -webkit-animation-timing-function: $timing-function;
+    animation-timing-function: $timing-function;
+}
+@mixin animation-delay($delay) {
+    -ms-animation-delay: $delay;
+    -o-animation-delay: $delay;
+    -moz-animation-delay: $delay;
+    -webkit-animation-delay: $delay;
+    animation-delay: $delay;
+}
+@mixin animation-iteration-count($iteration-count) {
+    -ms-animation-iteration-count: $iteration-count;
+    -o-animation-iteration-count: $iteration-count;
+    -moz-animation-iteration-count: $iteration-count;
+    -webkit-animation-iteration-count: $iteration-count;
+    animation-iteration-count: $iteration-count;
+}
+@mixin animation-direction($direction) {
+    -ms-animation-direction: $direction;
+    -o-animation-direction: $direction;
+    -moz-animation-direction: $direction;
+    -webkit-animation-direction: $direction;
+    animation-direction: $direction;
+}
+@mixin animation-fill-mode($fill-mode) {
+    -ms-animation-fill-mode: $fill-mode;
+    -o-animation-fill-mode: $fill-mode;
+    -moz-animation-fill-mode: $fill-mode;
+    -webkit-animation-fill-mode: $fill-mode;
+    animation-fill-mode: $fill-mode;
+}
+
+
+// Opacity
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    -ms-opacity: $opacity;
+    -o-opacity: $opacity;
+    -moz-opacity: $opacity;
+    -webkit-opacity: $opacity;
+    // IE8 filter
+    $opacity-ie: ($opacity * 100);
+    filter: alpha(opacity=$opacity-ie);
+}
+
+@mixin content-fa() {
+    &[href*="twitter"]:before {
+        content: "\f099";
+    }
+    &[href*="instagram"]:before {
+        content: "\f16d";
+    }
+    &[href*="yelp"]:before {
+        content: "\f1e9";
+    }
+    &[href*="flickr"]:before {
+        content: "\f16e";
+    }
+    &[href*="github"]:before {
+        content: "\f09b";
+    }
+    &[href*="dribbble"]:before {
+        content: "\f17d";
+    }
+    &[href*="wordpress"]:before {
+        content: "\f19a";
+    }
+    &[href*="tumblr"]:before {
+        content: "\f173";
+    }
+    &[href*="vine"]:before {
+        content: "\f1ca";
+    }
+    &[href*="snapchat"]:before {
+        content: "\f2ab";
+    }
+    &[href*="codepen"]:before {
+        content: "\f1cb";
+    }
+    &[href*="skype"]:before {
+        content: "\f17e";
+    }
+    &[href*="reddit"]:before {
+        content: "\f1a1";
+    }
+    &[href*="stumbleupon"]:before {
+        content: "\f1a4";
+    }
+    &[href*="pocket"]:before {
+        content: "\f265";
+    }
+    &[href*="foursquare"]:before {
+        content: "\f180";
+    }
+    &[href*="medium"]:before {
+        content: "\f23a";
+    }
+    &[href*="gotinder"]:before {
+        content: "\f043";
+    }
+    &[href*="whatsapp"]:before {
+        content: "\f232";
+    }
+    &[href*="slack"]:before {
+        content: "\f198";
+    }
+    &[href*="stackoverflow"]:before {
+        content: "\f16c";
+    }
+    &[href*="adn"]:before {
+        content: "\f170";
+    }
+    &[href*="amazon"]:before {
+        content: "\f270";
+    }
+    &[href*="android"]:before {
+        content: "\f17b";
+    }
+    &[href*="500px"]:before {
+        content: "\f26e";
+    }
+    &[href*="angel"]:before {
+        content: "\f209";
+    }
+    &[href*="behance"]:before {
+        content: "\f1b5";
+    }
+    &[href*="blacktieguide"]:before {
+        content: "\f27e";
+    }
+    &[href*="buysellads"]:before {
+        content: "\f20d";
+    }
+    &[href*="jcbusa"]:before {
+        content: "\f24b";
+    }
+    &[href*="visa"]:before {
+        content: "\f1f0";
+    }
+    &[href*="connectdevelop"]:before {
+        content: "\f20e";
+    }
+    &[href*="del.icio.us"]:before {
+        content: "\f1a5";
+    }
+    &[href*="dropbox"]:before {
+        content: "\f16b";
+    }
+    &[href*="empireonline"]:before {
+        content: "\f1d1";
+    }
+    &[href*="thefa"]:before {
+        content: "\f2b4";
+    }
+    &[href*="facebook"]:before {
+        content: "\f09a";
+    }
+    &[href*="gratipay"]:before {
+        content: "\f184";
+    }
+    &[href*="plus.google"]:before {
+        content: "\f0d5";
+    }
+    &[href*="wallet.google/"]:before {
+        content: "\f1ee";
+    }
+    &[href*="houzz"]:before {
+        content: "\f27c";
+    }
+    &[href*="last.fm"]:before {
+        content: "\f202";
+    }
+    &[href*="linkedin"]:before {
+        content: "\f0e1";
+    }
+    &[href*="modx"]:before {
+        content: "\f285";
+    }
+    &[href*="openid"]:before {
+        content: "\f19b";
+    }
+    &[href*="paypal"]:before {
+        content: "\f1ed";
+    }
+    &[href*="pinterest"]:before {
+        content: "\f0d2";
+    }
+    &[href*="qqchat"]:before {
+        content: "\f1d6";
+    }
+    &[href*="rebel"]:before {
+        content: "\f1d0";
+    }
+    &[href*="renren-inc"]:before {
+        content: "\f18b";
+    }
+    &[href*="sellsy"]:before {
+        content: "\f213";
+    }
+    &[href*="simplybuilt"]:before {
+        content: "\f215";
+    }
+    &[href*="slideshare"]:before {
+        content: "\f1e7";
+    }
+    &[href*="soundcloud"]:before {
+        content: "\f1be";
+    }
+    &[href*="steamcommunity"]:before {
+        content: "\f1b6";
+    }
+    &[href*="superpower-inc"]:before {
+        content: "\f2dd";
+    }
+    &[href*="trello"]:before {
+        content: "\f181";
+    }
+    &[href*="twitch.tv"]:before {
+        content: "\f1e8";
+    }
+    &[href*="viacoin"]:before {
+        content: "\f237";
+    }
+    &[href*="vimeo"]:before {
+        content: "\f27d";
+    }
+    &[href*="weibo"]:before {
+        content: "\f18a";
+    }
+    &[href*="microsoft"]:before {
+        content: "\f17a";
+    }
+    &[href*="wpforms"]:before {
+        content: "\f298";
+    }
+    &[href*="ycombinator"]:before {
+        content: "\f1d4";
+    }
+    &[href*="youtube"]:before {
+        content: "\f167";
+    }
+    &[href*="apple"]:before {
+        content: "\f209";
+    }
+    &[href*="bitbucket"]:before {
+        content: "\f171";
+    }
+    &[href*="americanexpress"]:before {
+        content: "\f1f3";
+    }
+    &[href*="mastercard.us"]:before {
+        content: "\f1f1";
+    }
+    &[href*="google/chrome"]:before {
+        content: "\f268";
+    }
+    &[href*="contao"]:before {
+        content: "\f26d";
+    }
+    &[href*="deviantart"]:before {
+        content: "\f1bd";
+    }
+    &[href*="drupal"]:before {
+        content: "\f1a9";
+    }
+    &[href*="envira.uk"]:before {
+        content: "\f299";
+    }
+    &[href*="https://mozilla/"]:before {
+        content: "\f269";
+    }
+    &[href*="fonticons"]:before {
+        content: "\f280";
+    }
+    &[href*="codecamp"]:before {
+        content: "\f2c5";
+    }
+    &[href*="glide.me"]:before {
+        content: "\f2a5";
+    }
+    &[href*="gratipay"]:before {
+        content: "\f184";
+    }
+    &[href*="iox"]:before {
+        content: "\f208";
+    }
+    &[href*="last.fm"]:before {
+        content: "\f203";
+    }
+    &[href*="linode"]:before {
+        content: "\f2b8";
+    }
+    &[href*="odnoklassniki"]:before {
+        content: "\f263";
+    }
+    &[href*="opera"]:before {
+        content: "\f26a";
+    }
+    &[href*="piedpiper"]:before {
+        content: "\f2ae";
+    }
+    &[href*="quora"]:before {
+        content: "\f2c4";
+    }
+    &[href*="sharesc"]:before {
+        content: "\f1e0";
+    }
+    &[href*="skyatlas"]:before {
+        content: "\f216";
+    }
+    &[href*="spotify"]:before {
+        content: "\f1bc";
+    }
+    &[href*="steampowered"]:before {
+        content: "\f1b7";
+    }
+    &[href*="telegram"]:before {
+        content: "\f2c6";
+    }
+    &[href*="tripadvisor"]:before {
+        content: "\f262";
+    }
+    &[href*="us.viadeo"]:before {
+        content: "\f2a9";
+    }
+    &[href*="weixin"]:before {
+        content: "\f1d7";
+    }
+    &[href*="xing"]:before {
+        content: "\f168";
+    }
+    &[href*="yoast"]:before {
+        content: "\f2b1";
+    }
+    &[href*="amazon"]:before {
+        content: "\f270";
+    }
+    &[href*="android"]:before {
+        content: "\f17b";
+    }
+    &[href*="bandcamp"]:before {
+        content: "\f2d5";
+    }
+    &[href*="behance"]:before {
+        content: "\f1b4";
+    }
+    &[href*="bitbucket"]:before {
+        content: "\f172";
+    }
+    &[href*="btc-e"]:before {
+        content: "\f15a";
+    }
+    &[href*="dinersclub"]:before {
+        content: "\f24c";
+    }
+    &[href*="discover"]:before {
+        content: "\f1f2";
+    }
+    &[href*="paypal"]:before {
+        content: "\f1f4";
+    }
+    &[href*="stripe"]:before {
+        content: "\f1f5";
+    }
+    &[href*="codiepie"]:before {
+        content: "\f284";
+    }
+    &[href*="dashcube"]:before {
+        content: "\f210";
+    }
+    &[href*="digg"]:before {
+        content: "\f1a6";
+    }
+    &[href*="edge"]:before {
+        content: "\f282";
+    }
+    &[href*="etsy"]:before {
+        content: "\f2d7";
+    }
+    &[href*="expeditedssl"]:before {
+        content: "\f23e";
+    }
+    &[href*="fontawesome"]:before {
+        content: "\f286";
+    }
+    &[href*="forumbee"]:before {
+        content: "\f211";
+    }
+    &[href*="getpocket"]:before {
+        content: "\f265";
+    }
+    &[href*="gitlab"]:before {
+        content: "\f296";
+    }
+    &[href*="glide.me"]:before {
+        content: "\f2a6";
+    }
+    &[href*="google"]:before {
+        content: "\f1a0";
+    }
+    &[href*="news.ycombinator"]:before {
+        content: "\f1d4";
+    }
+    &[href*="imdb"]:before {
+        content: "\f2d8";
+    }
+    &[href*="joomla"]:before {
+        content: "\f1aa";
+    }
+    &[href*="jsfiddle"]:before {
+        content: "\f1cc";
+    }
+    &[href*="leanpub"]:before {
+        content: "\f212";
+    }
+    &[href*="linkedin"]:before {
+        content: "\f0e1";
+    }
+    &[href*="linux"]:before {
+        content: "\f17c";
+    }
+    &[href*="maxcdn"]:before {
+        content: "\f136";
+    }
+    &[href*="meetup"]:before {
+        content: "\f2e0";
+    }
+    &[href*="mixcloud"]:before {
+        content: "\f289";
+    }
+    &[href*="ok"]:before {
+        content: "\f264";
+    }
+    &[href*="opencart"]:before {
+        content: "\f23d";
+    }
+    &[href*="optinmonster"]:before {
+        content: "\f23c";
+    }
+    &[href*="pagelines"]:before {
+        content: "\f18c";
+    }
+    &[href*="piedpiper"]:before {
+        content: "\f1a8";
+    }
+    &[href*="pinterest"]:before {
+        content: "\f0d3";
+    }
+    &[href*="producthunt"]:before {
+        content: "\f288";
+    }
+    &[href*="rebel"]:before {
+        content: "\f1d0";
+    }
+    &[href*="ravelry"]:before {
+        content: "\f2d9";
+    }
+    &[href*="scribd"]:before {
+        content: "\f28a";
+    }
+    &[href*="shirtsinbulk"]:before {
+        content: "\f214";
+    }
+    &[href*="slack"]:before {
+        content: "\f198";
+    }
+    &[href*="stackexchange"]:before {
+        content: "\f18d";
+    }
+    &[href*="stackoverflow"]:before {
+        content: "\f16c";
+    }
+    &[href*="tencent"]:before {
+        content: "\f1d5";
+    }
+    &[href*="themeisle"]:before {
+        content: "\f2b2";
+    }
+    &[href*="viadeo"]:before {
+        content: "\f2aa";
+    }
+    &[href*="vimeo"]:before {
+        content: "\f27d";
+    }
+    &[href*="vk"]:before {
+        content: "\f189";
+    }
+    &[href*="weixin"]:before {
+        content: "\f1d7";
+    }
+    &[href*="whatsapp"]:before {
+        content: "\f232";
+    }
+    &[href*="wikipedia"]:before {
+        content: "\f266";
+    }
+    &[href*="wpbeginner"]:before {
+        content: "\f297";
+    }
+    &[href*="wpexplorer"]:before {
+        content: "\f2de";
+    }
+    &[href*="xing"]:before {
+        content: "\f169";
+    }
+    &[href*="ycombinator"]:before {
+        content: "\f23b";
+    }
+}
+
+@mixin opal-loading(){
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: block;
+    vertical-align: middle;
+    border: 1px solid #bbb;
+    border-left-color: #000;
+    border-radius: 50%;
+    animation: opal-loading 450ms infinite linear;
+    -webkit-animation: opal-loading 450ms infinite linear;
+    margin: $grid-gutter-width auto;
+}
+
+@keyframes opal-loading {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes opal-loading {
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}

@@ -1,0 +1,105 @@
+@import "../../../../public/assets/scss/base/variables";
+
+.apartments-page-wrap {
+    .entry-image {
+        margin-bottom: 2rem;
+        .slick-list {
+            .slick-active {
+                text-align: -webkit-center;
+                margin-bottom: 1.5rem;
+                opacity: 1 !important;
+            }
+            .slider-item {
+                opacity: 0;
+            }
+        }
+        .slick-dots {
+            position: initial;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            li {
+                margin: 0 5px;
+                button {
+                    &::before {
+                        color: $primary;
+                    }
+                }
+                &.slick-active {
+                    button {
+                        &::before {
+                            color: $primary;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .slick-arrow {
+            &::before {
+                display: block;
+                font-size: 35px;
+                color: $black4;
+                border: 1px solid $black4;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                box-sizing: initial;
+                transition: all ease-in-out 0.5s;
+            }
+            &.slick-prev,
+            &.slick-next {
+                &:hover {
+                    &::before {
+                        color: $primary;
+                        border-color: $primary;
+                        transition: all ease-in-out 0.5s;
+                    }
+                }
+            }
+            &.slick-next {
+
+            }
+        }
+    }
+    .entry-meta {
+        margin: 0 0 1.5rem;
+        padding: 0 0 1.5rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        justify-content: center;
+        text-align: center;
+    }
+    .entry-content {
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (min-width: 1440px) {
+            flex: 0 0 66.66667%;
+            max-width: 66.66667%;
+
+        }
+    }
+    h3 {
+        padding: 1.5em 0 0;
+        text-transform: uppercase;
+    }
+    p {
+        margin-bottom: 1.5rem;
+    }
+    img {
+        &.alignright {
+            display: inline;
+            float: right;
+            margin-left: 1.5em;
+        }
+        &.alignleft {
+            display: inline;
+            float: left;
+            margin-left: 1.5em;
+        }
+    }
+    @media (max-width: 992px) {
+        .site-content {
+            padding: 50px 0;
+        }
+    }
+}
