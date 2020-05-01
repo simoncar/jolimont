@@ -1,0 +1,209 @@
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+.opal-move-up {
+    animation-name: opalMoveUp;
+    -moz-animation-name: opalMoveUp;
+    -webkit-animation-name: opalMoveUp;
+}
+
+@include keyframes(opalMoveUp){
+    from {
+        -webkit-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+.opal-move-down {
+    animation-name: opalMoveDown;
+    -moz-animation-name: opalMoveDown;
+    -webkit-animation-name: opalMoveDown;
+}
+
+@include keyframes(opalMoveDown) {
+    from {
+        -webkit-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+.opal-move-left {
+    animation-name: opalMoveLeft;
+    -moz-animation-name: opalMoveLeft;
+    -webkit-animation-name: opalMoveLeft;
+}
+
+@include keyframes(opalMoveLeft) {
+    from {
+        -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+.opal-move-right {
+    animation-name: opalMoveRight;
+    -moz-animation-name: opalMoveRight;
+    -webkit-animation-name: opalMoveRight;
+}
+
+@include keyframes(opalMoveRight) {
+    from {
+        -webkit-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.opal-scale-up{
+    animation-name: opalScaleUp;
+    -moz-animation-name: opalScaleUp;
+    -webkit-animation-name: opalScaleUp;
+}
+
+@include keyframes(opalScaleUp) {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(.6);
+        -ms-transform: scale(.6);
+        transform: scale(.6);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.opal-flip{
+    animation-name: opalFlip;
+    -moz-animation-name: opalFlip;
+    -webkit-animation-name: opalFlip;
+}
+
+@include keyframes(opalFlip) {
+    from {
+        opacity: 0;
+        -webkit-perspective: 1300px;
+        perspective: 1300px;
+        -webkit-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d
+    }
+
+    to {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        opacity: 1
+    }
+}
+
+
+.opal-helix{
+    animation-name: opalHelix;
+    -moz-animation-name: opalHelix;
+    -webkit-animation-name: opalHelix;
+}
+
+@include keyframes(opalHelix) {
+    from {
+        opacity: 0;
+        -webkit-perspective: 1300px;
+        perspective: 1300px;
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d
+    }
+
+    to {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        opacity: 1
+    }
+}
+
+.opal-am-popup{
+    animation: opalPopup;
+    -moz-animation-name: opalPopup;
+    -webkit-animation-name: opalPopup;
+}
+
+@include keyframes(opalPopup) {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(.4);
+        -ms-transform: scale(.4);
+        transform: scale(.4);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-perspective: 1300px;
+        perspective: 1300px;
+    }
+
+    70% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        opacity: .8;
+        animation-timing-function: ease-out;
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    to {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        opacity: 1
+    }
+}

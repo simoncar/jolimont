@@ -2,7 +2,7 @@
   "name": "react-striz",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://hawkoin.dsss.in/",
+  "homepage": "https://jolimont.simon.co",
   "basename": "/",
   "dependencies": {
     "@babel/core": "7.1.0",
@@ -105,7 +105,9 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "package": "node opal.js"
+    "package": "node opal.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

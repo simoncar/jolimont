@@ -1,0 +1,58 @@
+[
+    {
+        "residence": "TOWER PH1512",
+        "bed/bath": "1 / 1",
+        "sq. ft.": "625",
+        "sale price": "-",
+        "rent price": "$2055",
+        "floor plan": "/assets/imagewebp/apartment/img-06.webp"
+    },
+    {
+        "residence": "TOWER PH1501",
+        "bed/bath": "2 / 2",
+        "sq. ft.": "1030",
+        "sale price": "$5559",
+        "rent price": "-",
+        "floor plan": "/assets/imagewebp/apartment/img-07.webp"
+    },
+    {
+        "residence": "tower ph1706",
+        "bed/bath": "1 / 1",
+        "sq. ft.": "-",
+        "sale price": "-",
+        "rent price": "$2100",
+        "floor plan": "/assets/imagewebp/apartment/img-09.webp"
+    },
+    {
+        "residence": "tower 320",
+        "bed/bath": "1 / 1",
+        "sq. ft.": "453",
+        "sale price": "-",
+        "rent price": "$2500",
+        "floor plan": "/assets/imagewebp/apartment/img-10.webp"
+    },
+    {
+        "residence": "tower 303",
+        "bed/bath": "1 / 1",
+        "sq. ft.": "414",
+        "sale price": "$44280",
+        "rent price": "-",
+        "floor plan": "/assets/imagewebp/apartment/img-06.webp"
+    },
+    {
+        "residence": "tower 818",
+        "bed/bath": "1 / 1",
+        "sq. ft.": "376",
+        "sale price": "-",
+        "rent price": "2790",
+        "floor plan": "/assets/imagewebp/apartment/img-06.webp"
+    },
+    {
+        "residence": "tower ph1706",
+        "bed/bath": "1 / 1",
+        "sq. ft.": "428",
+        "sale price": "-",
+        "rent price": "$2100",
+        "floor plan": "/assets/imagewebp/apartment/img-07.webp"
+    }
+]

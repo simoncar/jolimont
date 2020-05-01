@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   load = () => {
-    fetch("/api/menu.json")
+    fetch(process.env.PUBLIC_URL + "/api/menu.json")
       .then((response) => response.json())
       .then((res) => {
         this.menu = res;

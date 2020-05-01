@@ -1,0 +1,211 @@
+$enable-shadows: false;
+// Colors
+$white: #fff !default;
+$white1: #fff !default;
+$white2: #fafafa !default;
+$white3: #f3f3f3 !default;
+$white4: #f6f6f6 !default;
+$two-white1: rgba($white1, .2) !default;
+
+$black1: #000 !default;
+$black2: #222 !default;
+$black3: #232323 !default;
+$black4: #3f4448 !default;
+$black5: #363636 !default;
+$one-black1: rgba($black1, .1) !default;
+$two-black1: rgba($black1, .2) !default;
+$three-black1: rgba($black1, .05) !default;
+$four-black1: rgba($black1, .4) !default;
+$eight-black1: rgba($black1, .8) !default;
+
+$silver1: #f1f1f1 !default;
+$silver2: #dbdbdb !default;
+$silver3: #cccccc !default;
+$silver4: #f9f9f9 !default;
+$silver5: #eeeeee !default;
+$silver6: #f4f4f4 !default;
+
+$gray1: #ebebeb !default;
+$gray2: #bbb !default;
+$gray3: #666 !default;
+$gray4: #aaa !default;
+$gray5: #555 !default;
+$gray6: #777 !default;
+$gray7: #999 !default;
+$gray8: #c4c4c4 !default;
+$gray9: #e1e1e1 !default;
+$gray10: #b8b8b8 !default;
+$gray11: #e0e2e6 !default;
+$gray12: #b6b7b6 !default;
+$gray13: #002222 !default;
+
+$red1: #ff4a5d !default;
+
+$purple1: #5f65b1 !default;
+$purple2: #9d4cfa !default;
+$purple3: #b426c5 !default;
+
+$blue1: #0085ba !default;
+$blue2: #21759b !default;
+$blue3: #06beda !default;
+$blue4: #6eadfb !default;
+$blue5: #8fbfe4 !default;
+$blue6: #0160b4 !default;
+$blue7: #5f65b1 !default;
+$blue8: #1752b1 !default$blue9: #1e3954 !default;
+
+$green1: #00c484;
+$green2: #b3e180;
+
+$orange1: #ec8f73;
+
+$yellow1: #fabd47;
+
+$error: #e2401c !default;
+
+$gray-light: $gray1;
+
+$transparent: transparent;
+
+// ===========================================
+$primary: #cabe9f;
+$secondary: #d49d5d;
+$brand-success: #8ed4cc;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #ef9595;
+$color-hover: darken($primary, 20%);
+$light:      #ffffff!default;
+$dark:  #3f4448 !default;
+// ===========================================
+
+$twitter: #00aced;
+$facebook: #3b5998;
+$googleplus: #dd4b39;
+$pinterest: #cb2027;
+$linkedin: #007bb6;
+$youtube: #bb0000;
+$vimeo: #1ab7ea;
+$tumblr: #32506d;
+$instagram: #bc2a8d;
+$flickr: #ff0084;
+$dribbble: #ea4c89;
+$quora: #a82400;
+$foursquare: #0072b1;
+$forrst: #5B9A68;
+$vk: #45668e;
+$wordpress: #21759b;
+$stumbleupon: #EB4823;
+$yahoo: #7B0099;
+$blogger: #fb8f3d;
+$soundcloud: #ff3a00;
+
+//============================================
+
+//$btn-secondary-bg: $secondary !default;
+//$btn-secondary-border-color: $btn-secondary-bg !default;
+
+$input-btn-padding-x-lg: 3.4rem;
+$input-btn-padding-y-lg: 1rem;
+$btn-border-radius-lg: 0;
+
+$input-btn-padding-x: 2.8rem;
+$input-btn-padding-y: 0.8rem;
+$btn-border-radius: 0;
+
+$input-btn-padding-x-sm: 2.8rem;
+$input-btn-padding-y-sm: .8rem;
+$btn-border-radius-sm: 0;
+
+
+$input-btn-line-height: 1.875;
+$input-btn-letter-spacing: 0.15em;
+
+$btn-font-weight: 700;
+$input-btn-focus-box-shadow: none;
+$input-btn-border-width: 2px;
+$input-border-color: $primary;
+$input-focus-border-color: $input-border-color;
+$btn-border-radius: 0;
+$font-weight-bold: 700;
+
+$btn-padding-y: 10px !default;
+$btn-padding-x: 30px !default;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-shadows: true;
+
+// Fonts
+$font-family-base: "Montserrat", sans-serif !default;
+$font-family-heading: "Marcellus SC", serif !default;
+$font-family-code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace !default;
+$font-family-input: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif !default;
+$font-family-lang1: Tahoma, Arial, sans-serif !default;
+$font-family-lang2: "PingFang TC", "Helvetica Neue", Helvetica, STHeitiTC-Light, Arial, sans-serif !default;
+$font-family-lang3: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif !default;
+$font-family-lang4: Arial, sans-serif !default;
+$font-family-lang5: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-lang6: "Arial Hebrew", Arial, sans-serif !default;
+$font-family-lang7: "Hiragino Kaku Gothic Pro", Meiryo, sans-serif !default;
+$font-family-lang8: "Apple SD Gothic Neo", "Malgun Gothic", "Nanum Gothic", Dotum, sans-serif !default;
+$font-family-lang9: "Sukhumvit Set", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-mono: monospace, monospace !default;
+$font-family-placeholder: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif !default;
+$font-family-pre: "Courier 10 Pitch", Courier, monospace !default;
+
+$font-weight-base: 400 !default;
+
+
+
+// =============================
+// Override Bootstrap
+// =============================
+//Override Bootstrap
+$gray-dark: #999;
+$brand-primary: $primary;
+$btn-primary-bg: $primary;
+
+$font-size-base:              14 !default; // Assumes the browser default, typically `16px`
+$line-height-base:            1.8 !default;
+$font-size-lg: 1.25rem !default;
+$font-size-sm: .85714rem !default;
+$btn-border-width: 2px !default;
+
+
+$h1-font-size: 72 !default;
+$h2-font-size: 48 !default;
+$h3-font-size: 30 !default;
+$h4-font-size: 24 !default;
+$h5-font-size: 18 !default;
+$h6-font-size: 16 !default;
+
+$modal-md: 500px !default;
+$btn-box-shadow: none;
+$body-color: #9ea0a6 !default;
+$headings-color: #3f4448 !default;
+$border-color: $gray1 !default;
+$headings-font-weight: 400;
+//$grid-gutter-width:       40px !default;
+$typo-headings-font-family: $font-family-heading !default;
+$headings-font-family: $font-family-heading !default;
+$input-btn-font-family: $font-family-base !default;
+$input-font-family: $font-family-base !default;
+//$font-family-sans-serif : "Rubik";
+$custom-select-padding-y:  $input-btn-padding-y  !default;
+$custom-select-padding-x:  $input-btn-padding-x  !default;
+
+$input-btn-font-size: 12 !default;
+
+$input-font-size: 14px;
+$border-radius: 0px !default;
+$input-box-shadow: none !default;
+$input-padding-y: 10px !default;
+$input-padding-x: 23px !default;
+$input-height: 44px;
+
+
+$progress-height:    20px !default;
+$progress-box-shadow:  none !default;

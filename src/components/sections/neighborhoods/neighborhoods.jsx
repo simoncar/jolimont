@@ -17,7 +17,7 @@ class NeighborhoodsSection extends Component {
   }
 
   load = () => {
-    fetch("/api/apartment-neighborhoods.json")
+    fetch(process.env.PUBLIC_URL + "/api/apartment-neighborhoods.json")
       .then((response) => response.json())
       .then((res) => {
         this.json = res;
