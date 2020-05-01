@@ -1,0 +1,89 @@
+@import "../../public/assets/scss/base/variables";
+
+.apartments {
+  padding: 120px 30px 150px 30px;
+  background: $headings-color url(/assets/imagewebp/theme/bg-apartment.webp);
+  position: relative;
+  @media (max-width: 992px) {
+    padding: 60px 0 !important;
+  }
+  .image-hotspots-accordion {
+    padding: 50px;
+    background: $white;
+    overflow: hidden;
+    @media (max-width: 992px) {
+      padding: 15px !important;
+    }
+    .accordion {
+      border: none;
+    }
+    .accordion__button {
+      padding: 20px 0;
+      position: relative;
+      &:before {
+        float: right;
+      }
+    }
+    .accordion__panel {
+      padding: 20px 0;
+    }
+  }
+  .image-hotspots {
+    img {
+      width: 100%;
+    }
+    .tooltip-wrapper {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      i {
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        border-radius: 50%;
+        height: 18px;
+        width: 18px;
+        line-height: 18px;
+        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+        background-color: $primary;
+        &::before {
+          content: "";
+          position: absolute;
+          top: calc(50% - 3px);
+          left: calc(50% - 3px);
+          width: 6px;
+          height: 6px;
+          display: block;
+          border-radius: 50%;
+          background-color: #fff;
+        }
+        &::after {
+          box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+          border-radius: 200%;
+          content: "";
+          position: absolute;
+          //z-index: 1;
+          transform: scale(1);
+          pointer-events: none;
+          animation: hotspot-animation 2s infinite;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+@keyframes hotspot-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
