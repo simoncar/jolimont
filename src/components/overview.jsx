@@ -23,7 +23,7 @@ class OverviewSection extends Component {
             </p>
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12">
-            <img className="img-fluid" src="/assets/imagewebp/theme/img-05.webp" alt="" />
+            <img className="img-fluid" src="/assets/images/outside.jpg" alt="" />
           </div>
         </div>
       </div>

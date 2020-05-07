@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { withTranslate } from "react-redux-multilingual";
 import "./footer.scss";
-import Copyright from "../copyright/copyright";
 import ContactForm from "../contact-form/contact-form";
 
 class FooterOne extends Component {

@@ -15,7 +15,7 @@ class SliderHome extends Component {
       <div className={"slider-wrap position-relative"}>
         <Slider {...settings}>
           <div className="slider-item position-relative">
-            <div className="slider-image" style={{ backgroundImage: "url(/assets/imagewebp/theme/slide1.webp)" }}></div>
+            <div className="slider-image" style={{ backgroundImage: "url(/assets/images/slide1.jpeg)" }}></div>
             <div className="container">
               <div className="slider-content">
                 <div className="text-center w-100">
@@ -39,7 +39,7 @@ class SliderHome extends Component {
           </div>
 
           <div className="slider-item position-relative">
-            <div className="slider-image" style={{ backgroundImage: "url(/assets/imagewebp/theme/slide2.webp)" }}></div>
+            <div className="slider-image" style={{ backgroundImage: "url(/assets/images/slide2.jpeg)" }}></div>
             <div className="container">
               <div className="slider-content">
                 <div className="text-center w-100">
@@ -58,7 +58,7 @@ class SliderHome extends Component {
             </div>
           </div>
           <div className="slider-item position-relative">
-            <div className="slider-image" style={{ backgroundImage: "url(/assets/imagewebp/theme/slide3.webp)" }}></div>
+            <div className="slider-image" style={{ backgroundImage: "url(/assets/images/slide3.jpeg)" }}></div>
             <div className="container">
               <div className="slider-content">
                 <div className="text-center w-100">

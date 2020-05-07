@@ -18,7 +18,7 @@ import PageNotFound from "./components/404";
 
 // Features
 import Layout from "./app";
-import TypographyPage from "./components/pages/typography/typography";
+
 import { getAllData } from "./actions";
 
 class Root extends React.Component {
@@ -33,7 +33,6 @@ class Root extends React.Component {
                 <Layout>
                   <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home1} />
                   {/*Pages*/}
-                  <Route path={`${process.env.PUBLIC_URL}/typography`} component={TypographyPage} />
                 </Layout>
               </Switch>
             </ScrollContext>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./amenities.scss";
-import Heading from "../../common/heading/heading";
-import CarouselPage1 from "../../common/slider/slider1";
+import Heading from "./common/heading/heading";
+import CarouselPage1 from "./common/slider/slider1";
 
 class AmenitiesSection extends Component {
   render() {
