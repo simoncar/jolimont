@@ -20,7 +20,7 @@
                 "option": "Yes"
             }
         ],
-        "image": "/assets/imagewebp/apartment/L1png.webp"
+        "image": "/assets/images/L1png.png"
     },
     {
         "title": "Level 2",
@@ -47,7 +47,7 @@
                 "option": "Yes"
             }
         ],
-        "image": "/assets/imagewebp/apartment/L2png.webp",
+        "image": "/assets/images/L2png.png",
         "position": "left"
     },
     {
@@ -75,7 +75,7 @@
                 "option": "Yes"
             }
         ],
-        "image": "/assets/imagewebp/apartment/L3png.webp"
+        "image": "/assets/images/L3png.png"
     },
     {
         "title": "LEVEL 4",
@@ -102,7 +102,7 @@
                 "option": "Yes"
             }
         ],
-        "image": "/assets/imagewebp/apartment/L4png.webp",
+        "image": "/assets/images/L4png.png",
         "position": "left"
     },
     {
@@ -122,6 +122,6 @@
                 "option": ""
             }
         ],
-        "image": "/assets/imagewebp/apartment/L5png.webp"
+        "image": "/assets/images/L5png.png"
     }
 ]
