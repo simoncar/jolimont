@@ -60,7 +60,7 @@ class HeaderOne extends Component {
           <div className="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div className="modal-content quick-view-modal">
               <div className="modal-body">
-                <h6 className="heading-title">Contact Us...</h6>
+                <h6 className="heading-title">Contact Us</h6>
                 <ContactForm />
               </div>
             </div>
