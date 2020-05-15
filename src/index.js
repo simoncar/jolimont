@@ -7,6 +7,7 @@ import { IntlProvider } from "react-redux-multilingual";
 import "./index.scss";
 import "animate.css/animate.min.css";
 
+
 // Import custom components
 import store from "./store";
 import translations from "./constants/translations";
@@ -14,7 +15,7 @@ import translations from "./constants/translations";
 // Layouts
 import Home1 from "./components/home-1";
 // Pages
-import PageNotFound from "./components/404";
+
 
 // Features
 import Layout from "./app";
